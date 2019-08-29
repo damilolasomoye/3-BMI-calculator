@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="jumbotron">
+        <div class="card" id="main-body">
+            <h2 class="card-header">Hi I'm Learning JavaScript</h2>
+            <div class="card-body">
+                <h4>My Nam Is Dami</h4>
+                <h6>I'm 20 Years</h6>
+            </div>
+        </div>
+
+        <div class="data-forms">
+            <!-- <form action=""></form> -->
+            <form id="bmi_form">
+                <br>
+                <a href="https://www.medicalnewstoday.com/articles/323622.php" class="btn btn-primary btn-lg active"
+                    role="button" aria-pressed="true" target="_blank">Learn more about BMI</a>
+                <br>
+
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Enter Mass here:</label>
+                    <input name="input_mass" type="number" id="mass" class="form-control" id="exampleFormControlInput1"
+                        placeholder="mass in kg">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput2">Enter Height here:</label>
+                    <input name="input_height" id="height" type="number" class="form-control" id="exampleFormControlInput2"
+                        placeholder="height in m">
+                </div>
+
+                <div class="alert alert-danger" role="alert" id="results">
+                         <!-- intentionally left blank to leave room for answer, see output in google  -->
+                </div>
+
+                <button type="button" class="btn btn-primary"
+                    onclick="bmi_calculator()">Calculate BMI</button>
+            </form>
+        </div>
+
+    </section>
+</body>
+
+</html>
